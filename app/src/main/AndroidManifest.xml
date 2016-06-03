@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.raghavbabu.collabeditor.client">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CollabEditor"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="CollabEditor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.FileActivity"
+            android:label="Shared Files" />
+        <activity
+            android:name=".activity.NewFileActivity"
+            android:label="New File" />
+        <activity
+            android:name=".activity.EditTextActivity"
+            android:label="Edit File"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.VersionActivity"
+            android:label="@string/title_activity_version"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.SyncActivity"
+            android:label="@string/title_activity_sync"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activity.SharedFileEditTextActivity"
+            android:label="@string/title_activity_shared_file_edit_text"
+            android:theme="@style/MyMaterialTheme"></activity>
+    </application>
+
+</manifest>
